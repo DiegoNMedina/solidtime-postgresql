@@ -184,7 +184,7 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->withPersonalOrganization()->create([
             'email' => 'admin@example.com',
-            // 'password' => bcrypt('password'),
+            'password' => bcrypt('password'),
         ]);
 
         DatabaseSeederAfterSeed::dispatch();
